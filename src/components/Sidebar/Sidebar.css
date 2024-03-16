@@ -1,0 +1,65 @@
+.sidebar {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  overflow-y: scroll;
+  overflow: auto;
+  font-family: "Roboto", sans-serif;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 16px;
+  padding: 8px;
+}
+.sidebar::-webkit-scrollbar-track {
+  background: var(--scroll-bg);
+  border-radius: 16px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background: var(--scroll-thumb);
+  border-radius: 16px;
+  border: 1px solid var(--scroll-bg);
+}
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scroll-thumb);
+}
+
+/* Notes tiles section */
+
+.sidebar-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 32px;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 32px;
+}
+.sidebar-item:hover {
+  background-color: var(--sidebar-hover);
+}
+.notes-name {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.notes-name h3 {
+  color: #000;
+}
+
+/* Notes display picture */
+
+.notes-dp {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff79f2;
+}
+.notes-dp h1 {
+  color: #ffffff;
+  font-weight: bold;
+}
